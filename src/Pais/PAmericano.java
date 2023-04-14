@@ -7,13 +7,17 @@ public class PAmericano extends Pais {
         super(nombre, superficie, nroHabitantes);
         this.ubicacion = ubicacion;
     }
+    public PAmericano(){
+        super();
+    }
     // son metodos para mostrar diferentes.
     public void mostrar(){
         super.mostrar();
         System.out.println("ubicacion: "+ubicacion);
     }
+    // Otro tipo de mostrar
     public void mostrarPA(){
-        super.mostrar();
+        mostrar();
         System.out.println("ubicacion: "+ubicacion);
     }
 
@@ -23,6 +27,14 @@ public class PAmericano extends Pais {
 
     public PAmericano(String nombre, String ubicacion) {
         super(nombre);
+        this.ubicacion = ubicacion;
+    }
+
+    public String getUbicacion() {
+        return ubicacion;
+    }
+
+    public void setUbicacion(String ubicacion) {
         this.ubicacion = ubicacion;
     }
 }

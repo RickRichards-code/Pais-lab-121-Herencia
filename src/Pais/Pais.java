@@ -50,4 +50,12 @@ public class Pais {
     public void setNroHabitantes(int nroHabitantes) {
         this.nroHabitantes = nroHabitantes;
     }
+    public void mayorSuperficie(Pais b){
+        if(superficie>b.superficie)
+            System.out.println(nombre);
+        else if(superficie<b.superficie)
+            System.out.println(b.nombre);
+        else
+            System.out.println("sus superficies son iguales");
+    }
 }
